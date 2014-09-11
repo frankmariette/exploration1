@@ -1,0 +1,138 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="off-canvas-wrap" data-offcanvas>
+      <div class="inner-wrap">
+        <nav class="tab-bar">
+          <section class="left-small">
+            <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+          </section>
+
+          <section class="middle tab-bar-section">
+            <h1 class="title">Foundation Exploration    |   Home</h1>
+          </section>
+
+        </nav>
+
+        <aside class="left-off-canvas-menu">
+          <ul class="off-canvas-list">
+            <li><label>Exploration</label></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="form.html">Forms</a></li>
+            <li><a href="lorem.html">Lorem Ipsum Lyfe</a></li>
+          </ul>
+        </aside>
+        <section class="main-section">
+          <div class="row">
+            <div class="large-12" style="padding:20px;">
+              <h1>A Form Page</h1>
+              <dl class="tabs" data-tab>
+                <dd class="active"><a href="#tab1">Address</a></dd>
+                <dd><a href="#tab2">Contact</a></dd>
+              </dl>
+              <div class="tabs-content">
+                <div class="content active" id="tab1">
+                  <form action="alertData();" data-abide>
+                    <fieldset>
+                       <div class="row">
+                          <div class="large-6 columns">
+                            <label>First Name
+                              <input type="text" placeholder="First Name" />
+                            </label>
+                          </div>
+                          <div class="large-6 columns">
+                            <label>Last Name
+                              <input type="text" placeholder="Last Name">
+                            </label>
+                          </div>
+                       </div>
+                       <div class="row">
+                         <div class="large-12 columns">
+                           <fieldset>
+                            <legend>Address</legend>
+                             <div class="large-4 columns">
+                               <label>Street Number
+                                <input type="text" pattern="alphanumeric" placeholder="1234" required>
+                               </label>
+                               <small class="error">Required field</small>
+                             </div>
+                             <div class="large-8 columns">
+                               <label>Street Address
+                                <input type="text" pattern="alphanumeric" placeholder="Some Street" required>
+                               </label>
+                               <small class="error">Required field</small>
+                             </div>
+                             <div class="large-6 columns">
+                              <label>City
+                                <input type="text" pattern="alpha" placeholder="Columbia" required> 
+                              </label>
+                              <small class="error">Required field. Alphabetical characters only</small>
+                             </div>
+                             <div class="large-2 columns">
+                               <label>State
+                                  <input type="text" pattern="[A-Z]{2}" placeholder="MO" required>
+                               </label>
+                               <small class="error">Required field. Input limited to two character state code.</small>
+                             </div>
+                             <div class="large-4 columns">
+                               <label>Zipcode
+                                  <input type="text" pattern="numeric" placeholder="65203" required>
+                               </label>
+                               <small class="error">Required field. Numerical values only</small>
+                             </div>
+                          </fieldset>
+                         </div> 
+                       </div>
+                    </fieldset>
+                </div>
+                <!-- End Tab One -->
+
+                <!-- Start Tab two -->
+                <div class="content" id="tab2">
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <fieldset>
+                        <div class="large-6 columns">
+                          <label>Email
+                            <input type="email" required>
+                          </label>
+                          <small class="error">Format should be example@example.com</small>
+                        </div>
+                        <div class="large-6 columns">
+                          <label>URL
+                            <input type="url">
+                          </label>
+                          <small class="error">Format should be http://example.com</small>
+                        </div>
+                        <div class="large-6 columns">
+                          <label>Phone Number
+                            <input type="text" pattern="number">
+                          </label>
+                        </div>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+                <input class="button radius round small" type="submit" value="Submit"> 
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
